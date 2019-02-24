@@ -7,8 +7,57 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("css/digital-7.ttf");
+}
 
+#root {
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.calculator-layout {
+}
+.calc-row {
+}
+.calc-button {
+  width: 75px;
+  height: 75px;
+  border: 5px solid #ddd;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10;
+  float: left;
+  color: white;
+  background: rgb(25, 25, 25);
+}
+.calc-button:focus {
+  border: none;
+  outline: none;
+}
+.display-container {
+  font-family: "digital-clock-font";
+  text-align: right;
+  position: relative;
+  font-size: 3rem;
+  height: 3rem;
+  background: #40685a;
+  overflow: hidden;
+}
+.display-background {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.1);
+}
+.display {
+  color: black;
+  position: absolute;
+}
+.red {
+  background: #7e243a;
+}
+.gray {
+  background: #6e6b7e;
 }
